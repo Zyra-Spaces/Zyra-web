@@ -47,15 +47,16 @@ export const HeroSection: React.FC = () => {
       {/* Content Container */}
       <div className="relative z-10 flex min-h-screen flex-col px-48 mx-auto">
         {/* Navigation Header */}
-        <header className="mt-12">
+        <header className=" fixed top-12 z-10 right-48 left-48 rounded-sm">
           <GlassSurface
             width="100%"
             height="auto"
             borderRadius={0}
-            blur={40}
+            blur={100}
             brightness={100}
             opacity={0.93}
             backgroundOpacity={0.03}
+            className="rounded-sm"
           >
             <div className="flex items-center justify-between  w-full">
               {/* Logo */}
@@ -70,7 +71,7 @@ export const HeroSection: React.FC = () => {
               </div>
 
               {/* Navigation Links */}
-              <nav className="flex items-center gap-8 border bg-gray-50/50 rounded-sm ">
+              <nav className="flex items-center gap-8 border bg-gray-50/80 rounded-sm ">
                 <a
                   href="#home"
                   className="text-sm font-medium text-gray-600 hover:text-[#4780C6] transition-colors  border-r p-2 px-12"
@@ -106,7 +107,7 @@ export const HeroSection: React.FC = () => {
         </header>
 
         {/* Hero Content */}
-        <div className="  px-8 pb-32 mt-12">
+        <div className="  px-8 pb-32 mt-40">
 
           <div className="text-center mb-8">
             <h1 className="text-[120px] font-light bg-gradient-to-b from-[#4780C6] to-white text-transparent bg-clip-text  tracking-wide leading-none mb-8">
@@ -119,8 +120,8 @@ export const HeroSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 w-full max-w-7xl px-8">
-          <div className="grid grid-cols-4 gap-6">
+        <div className="">
+          <div className="grid grid-cols-4 gap-6 w-full border">
             {projects.map((project, index) => (
               <Card className="border-0 bg-transparent shadow-none overflow-hidden w-full">
                 <div className="relative aspect-[4/3] w-full">
