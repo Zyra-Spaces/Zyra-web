@@ -1,7 +1,8 @@
-import React from 'react'
+import { HeroSection } from "@/components/hero-section";
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
+
+export default function HomePage() {
+  return <div className="">
+    <HeroSection />
+    </div>
 }
