@@ -5,6 +5,7 @@ import ShareBurningIdea from "@/components/share-burning-idea";
 import StartBuildingSection from "@/components/start-building";
 import ProductsSection from "@/components/products-section";
 import StartupsSection from "@/components/startups-section";
+import CollaboratorsSection from "@/components/collaborators-section";
 
 export default function HomePage() {
   return (
@@ -13,9 +14,10 @@ export default function HomePage() {
       <ProjectSection />
       <ProjectCollaboration />
       <ShareBurningIdea />
-      <StartBuildingSection />
       <ProductsSection />
+      <StartBuildingSection />
       <StartupsSection />
+      <CollaboratorsSection />
     </div>
   );
 }
