@@ -70,7 +70,7 @@ export default function ProductsSection() {
         />
       </div>
 
-      <div className="relative z-10 mx-auto">
+      <div className="relative  mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-16">
           <div>
@@ -94,7 +94,7 @@ export default function ProductsSection() {
             return (
               <Card 
                 key={product.id} 
-                className="bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-101 rounded-xl"
+                className="bg-white/50 backdrop-blur-sm border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-101 rounded-xl "
               >
                 <CardContent className="p-8">
                   {/* Icon */}
