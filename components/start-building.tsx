@@ -26,65 +26,13 @@ export default function StartBuildingSection() {
         <div className="grid grid-cols-1 lg:grid-cols-[70%_30%] gap-12 items-center">
           {/* Left Column - Flowchart/Diagram */}
           <div className="relative">
-            <div className="relative aspect-[16/9] bg-gray-50 rounded-2xl p-8">
-              {/* Flowchart Container */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                {/* Simple flowchart representation */}
-                <div className="flex items-center gap-4 overflow-x-auto pb-4">
-                  {/* Home Page */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">📄</div>
-                    <div className="text-sm font-semibold">Home Page</div>
-                  </div>
-
-                  <div className="text-gray-400">→</div>
-
-                  {/* Products/Services */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">🛍️</div>
-                    <div className="text-sm font-semibold text-center">Products/Services</div>
-                  </div>
-
-                  <div className="text-gray-400">→</div>
-
-                  {/* Display Products */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">📦</div>
-                    <div className="text-sm font-semibold text-center">Display Products</div>
-                  </div>
-
-                  <div className="text-gray-400">→</div>
-
-                  {/* Product Page */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-blue-400 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">📄</div>
-                    <div className="text-sm font-semibold text-center">Product Page</div>
-                  </div>
-
-                  <div className="text-gray-400">→</div>
-
-                  {/* Add to Cart */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-yellow-400 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">🛒</div>
-                    <div className="text-sm font-semibold text-center">Add to Cart</div>
-                  </div>
-
-                  <div className="text-gray-400">→</div>
-
-                  {/* Thank You Page */}
-                  <div className="flex-shrink-0 w-32 h-32 bg-white border-2 border-gray-300 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                    <div className="text-xs text-gray-400 mb-1">✓</div>
-                    <div className="text-sm font-semibold text-center">Thank You Page</div>
-                  </div>
-                </div>
-
-                {/* Cart Page below */}
-                <div className="absolute bottom-8 right-1/4 w-32 h-32 bg-white border-2 border-red-400 rounded-lg flex flex-col items-center justify-center shadow-sm">
-                  <div className="text-xs text-gray-400 mb-1">🛒</div>
-                  <div className="text-sm font-semibold text-center">Cart Page</div>
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/chart-flow.svg"
+              alt="Chart Flow Diagram"
+              width={635}
+              height={322}
+              className="w-full h-auto"
+            />
           </div>
 
           {/* Right Column - Text Content */}

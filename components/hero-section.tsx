@@ -123,7 +123,7 @@ export const HeroSection: React.FC = () => {
         <div className="">
           <div className="grid grid-cols-4 gap-6 w-full border">
             {projects.map((project, index) => (
-              <Card className="border-0 bg-transparent shadow-none overflow-hidden w-full">
+              <Card className="border-0 bg-transparent shadow-none overflow-hidden w-full" key={project.id}>
                 <div className="relative aspect-[4/3] w-full">
                   <Image
                     src={project.image}
