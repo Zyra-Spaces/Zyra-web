@@ -6,6 +6,7 @@ import StartBuildingSection from "@/components/start-building";
 import ProductsSection from "@/components/products-section";
 import StartupsSection from "@/components/startups-section";
 import CollaboratorsSection from "@/components/collaborators-section";
+import Footer from "@/components/footer";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <StartBuildingSection />
       <StartupsSection />
       <CollaboratorsSection />
+      <Footer />
     </div>
   );
 }
