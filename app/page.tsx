@@ -3,6 +3,7 @@ import ProjectCollaboration from "@/components/project-collabolation";
 import ProjectSection from "@/components/projects-section";
 import ShareBurningIdea from "@/components/share-burning-idea";
 import StartBuildingSection from "@/components/start-building";
+import ProductsSection from "@/components/products-section";
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <ProjectCollaboration />
       <ShareBurningIdea />
       <StartBuildingSection />
+      <ProductsSection />
     </div>
   );
 }

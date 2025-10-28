@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function StartBuildingSection() {
   return (
-    <div className="min-h-screen py-16 px-40">
+    <div className="min-h-screen px-48">
       <div className="mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-16">
